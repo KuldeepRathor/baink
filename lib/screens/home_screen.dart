@@ -2,6 +2,7 @@ import 'package:baink/components/cards.dart';
 import 'package:baink/components/default_button.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'dart:html' as html;
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key, required String title}) : super(key: key);
@@ -40,7 +41,9 @@ class HomeScreen extends StatelessWidget {
                           Default_Button(
                             text: "Join Waitlist",
                             press: () {
-                              _launchURL("https://forms.gle/TDUgqPjy2JW7DCgF8");
+                              html.window.open(
+                                  "https://forms.gle/JUZpTRUVqiBww9YbA",
+                                  "_blanck");
                             },
                           ),
                         ],
@@ -167,7 +170,9 @@ class HomeScreen extends StatelessWidget {
                           image: "assets/images/Viral Bhat.jpeg",
                           name: 'Viral Bhat',
                           press: () {
-                            _launchURL("https://forms.gle/TDUgqPjy2JW7DCgF8");
+                            html.window.open(
+                                "https://www.linkedin.com/in/viral-bhatt/",
+                                "_blanck");
                           },
                         ),
                         SizedBox(
@@ -177,7 +182,9 @@ class HomeScreen extends StatelessWidget {
                           image: "assets/images/Abhishek Ramkumar.jpeg",
                           name: 'Abhishek Ramkumar',
                           press: () {
-                            print("Hello World");
+                            html.window.open(
+                                "https://www.linkedin.com/in/abhishek-ramkumar-9b298455/",
+                                "_blanck");
                           },
                         ),
                         SizedBox(
@@ -186,7 +193,11 @@ class HomeScreen extends StatelessWidget {
                         Cards(
                           image: "assets/images/Jai Murlidharan.jpeg",
                           name: 'Jai Murlidharan',
-                          press: () {},
+                          press: () {
+                            html.window.open(
+                                "https://www.linkedin.com/in/jai-murlidharan-cfa-0493624b/",
+                                "_blanck");
+                          },
                         ),
                       ],
                     ),
@@ -207,7 +218,9 @@ class HomeScreen extends StatelessWidget {
                           image: "assets/images/Surya1.jpg",
                           name: 'Surya Ganesh',
                           press: () {
-                            print("Hello World");
+                            html.window.open(
+                                "https://www.linkedin.com/in/suryaganesh2002/",
+                                "_blanck");
                           },
                         ),
                         SizedBox(
@@ -217,8 +230,9 @@ class HomeScreen extends StatelessWidget {
                           image: "assets/images/Kuldeep.jpeg",
                           name: 'Kuldeep Rathor',
                           press: () {
-                            _launchURL(
-                                "https://www.linkedin.com/in/kuldeep-rathor/");
+                            html.window.open(
+                                "https://www.linkedin.com/in/kuldeep-rathor/",
+                                "_blanck");
                           },
                         ),
                         SizedBox(
@@ -227,7 +241,11 @@ class HomeScreen extends StatelessWidget {
                         Cards(
                           image: "assets/images/Rohan Kamble.jpg",
                           name: 'Rohan Kambli',
-                          press: () {},
+                          press: () {
+                            html.window.open(
+                                "https://www.linkedin.com/in/rohanrk/",
+                                "_blanck");
+                          },
                         ),
                         SizedBox(
                           width: 50,
@@ -235,7 +253,11 @@ class HomeScreen extends StatelessWidget {
                         Cards(
                           image: 'assets/images/Amankumar.jpeg',
                           name: 'AmanKumar Singh',
-                          press: () {},
+                          press: () {
+                            html.window.open(
+                                "https://www.linkedin.com/in/amankumar-singh-8a3b37158/ ",
+                                "_blanck");
+                          },
                         ),
                       ],
                     ),
@@ -248,7 +270,11 @@ class HomeScreen extends StatelessWidget {
                         Cards(
                           image: 'assets/images/Ananya Raorane.jpeg',
                           name: 'Ananya Raorane',
-                          press: () {},
+                          press: () {
+                            html.window.open(
+                                "https://www.linkedin.com/in/ananya-raorane-296856207/",
+                                "_blanck");
+                          },
                         ),
                         SizedBox(
                           width: 50,
@@ -256,7 +282,11 @@ class HomeScreen extends StatelessWidget {
                         Cards(
                           image: 'assets/images/Vinayak.jpeg',
                           name: 'Vinayak Rane',
-                          press: () {},
+                          press: () {
+                            html.window.open(
+                                "https://www.linkedin.com/in/vinayak-ranjane-15025120a/",
+                                "_blanck");
+                          },
                         ),
                         SizedBox(
                           width: 50,
@@ -264,7 +294,11 @@ class HomeScreen extends StatelessWidget {
                         Cards(
                           image: 'assets/images/Dhruv.jpeg',
                           name: 'Dhruv More',
-                          press: () {},
+                          press: () {
+                            html.window.open(
+                                "https://www.linkedin.com/in/dhruv-more-4014a3170/",
+                                "_blanck");
+                          },
                         )
                       ],
                     ),
@@ -280,10 +314,10 @@ class HomeScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(400),
                           color: Color(0xff1B8AF0),
                         ),
-                        child: Wrap(
+                        child: Column(
                           children: [
                             SizedBox(
-                              height: 150,
+                              height: 50,
                             ),
                             Text(
                               "We need Support. \nWe\'re here to help.",
@@ -308,8 +342,9 @@ class HomeScreen extends StatelessWidget {
                             Default_Button(
                               text: "Join Waitlist",
                               press: () {
-                                _launchURL(
-                                    "https://forms.gle/TDUgqPjy2JW7DCgF8");
+                                html.window.open(
+                                    "https://forms.gle/JUZpTRUVqiBww9YbA",
+                                    "_blanck");
                               },
                             ),
                           ],
@@ -325,8 +360,4 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
-}
-
-void _launchURL(_url) async {
-  if (!await launchUrl(_url)) throw 'Could not launch $_url';
 }

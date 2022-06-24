@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Default_Button extends StatelessWidget {
   final String text;
-  final Function press;
+  final VoidCallback press;
 
   const Default_Button({
     Key? key,
@@ -18,10 +18,10 @@ class Default_Button extends StatelessWidget {
         child: ElevatedButton(
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(
-               Colors.white,
+              Colors.white,
             ),
           ),
-          onPressed: press(),
+          onPressed: press,
           child: Text(
             text,
             style: const TextStyle(
