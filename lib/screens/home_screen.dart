@@ -281,7 +281,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Cards(
                           image: 'assets/images/Vinayak.jpeg',
-                          name: 'Vinayak Rane',
+                          name: 'Vinayak Ranjane',
                           press: () {
                             html.window.open(
                                 "https://www.linkedin.com/in/vinayak-ranjane-15025120a/",
