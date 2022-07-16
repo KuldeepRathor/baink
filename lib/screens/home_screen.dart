@@ -14,12 +14,14 @@ class HomeScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          physics: BouncingScrollPhysics(),
           child: Column(
             children: [
               Container(
                 // height: size.height,
                 // width: size.width,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.black,
                 ),
                 child: Column(
@@ -31,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                         children: [
                           TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               "BAiNK CAPITAL",
                               style: TextStyle(
                                 fontSize: 30,
@@ -56,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                           child: Text(
                             "The Saving account \nyou didn’t know you \nneeded"
                                 .toUpperCase(),
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 100,
                               fontWeight: FontWeight.bold,
@@ -66,21 +68,21 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 150,
                     ),
                     Container(
                       height: size.height,
                       width: size.width,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(
                               "assets/images/Section 2 - Payments.png"),
                           fit: BoxFit.cover,
                         ),
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(78.0),
+                      child: const Padding(
+                        padding: EdgeInsets.all(78.0),
                         child: Text(
                           "• Make up to 9.4% on your savings account. \n• Boost your credit score by 100 points within a year.",
                           style: TextStyle(
@@ -91,15 +93,15 @@ class HomeScreen extends StatelessWidget {
                     Container(
                       height: size.height,
                       width: size.width,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(
                               "assets/images/Section 3 - Banking.png"),
                           fit: BoxFit.cover,
                         ),
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 430, left: 100),
+                      child: const Padding(
+                        padding: EdgeInsets.only(top: 430, left: 100),
                         child: Text(
                           "• Make target-oriented investments with our 12% FD. \n• Interact with the app in your vernacular language.",
                           style: TextStyle(
@@ -114,14 +116,14 @@ class HomeScreen extends StatelessWidget {
                     Container(
                       height: size.height,
                       width: size.width,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(
                               "assets/images/Section 4 - Cash Card _ Boost.png"),
                           fit: BoxFit.cover,
                         ),
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.all(78.0),
                         child: Text(
                           "• Get higher loan amounts at low interests through us. \n• Get deals and discounts customized for you.",
@@ -138,29 +140,29 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 150,
                     ),
-                    Text(
+                    const Text(
                       "Team Section",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 70,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 100,
                     ),
-                    Text(
+                    const Text(
                       "Mentors",
                       style: TextStyle(fontSize: 50),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 50,
                     ),
                     Wrap(
@@ -175,7 +177,7 @@ class HomeScreen extends StatelessWidget {
                                 "_blanck");
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
                         Cards(
@@ -187,7 +189,7 @@ class HomeScreen extends StatelessWidget {
                                 "_blanck");
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
                         Cards(
@@ -201,14 +203,14 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 100,
                     ),
-                    Text(
+                    const Text(
                       "Dev Team",
                       style: TextStyle(fontSize: 50),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 100,
                     ),
                     Wrap(
@@ -223,7 +225,7 @@ class HomeScreen extends StatelessWidget {
                                 "_blanck");
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
                         Cards(
@@ -235,7 +237,7 @@ class HomeScreen extends StatelessWidget {
                                 "_blanck");
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
                         Cards(
@@ -247,7 +249,7 @@ class HomeScreen extends StatelessWidget {
                                 "_blanck");
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
                         Cards(
@@ -261,7 +263,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 50,
                     ),
                     Wrap(
@@ -276,7 +278,7 @@ class HomeScreen extends StatelessWidget {
                                 "_blanck");
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
                         Cards(
@@ -288,7 +290,7 @@ class HomeScreen extends StatelessWidget {
                                 "_blanck");
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
                         Cards(
@@ -302,7 +304,7 @@ class HomeScreen extends StatelessWidget {
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 100,
                     ),
                     Padding(
@@ -312,23 +314,23 @@ class HomeScreen extends StatelessWidget {
                         width: 1000,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(400),
-                          color: Color(0xff1B8AF0),
+                          color: const Color(0xff1B8AF0),
                         ),
                         child: Column(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               height: 50,
                             ),
-                            Text(
+                            const Text(
                               "We need Support. \nWe\'re here to help.",
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 45),
                               // textAlign: TextAlign.center,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 30,
                             ),
-                            Text(
+                            const Text(
                               'We are on a journey to provide sustainable financial growth to the under-banked population. \nJoin Us on our journey and explore our feature which will also benefit you!',
                               style: TextStyle(
                                 fontSize: 25,
@@ -336,7 +338,7 @@ class HomeScreen extends StatelessWidget {
                               ),
                               textAlign: TextAlign.center,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 50,
                             ),
                             Default_Button(

@@ -32,7 +32,7 @@ class Cards extends StatelessWidget {
         ),
         Text(
           name,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 30,
           ),
         ),
