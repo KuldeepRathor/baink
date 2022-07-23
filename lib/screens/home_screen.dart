@@ -1,7 +1,7 @@
 import 'package:baink/components/cards.dart';
 import 'package:baink/components/default_button.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'dart:html' as html;
 
 class HomeScreen extends StatelessWidget {
@@ -15,6 +15,8 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
+          // keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.manual,
+          // dragStartBehavior: DragStartBehavior.start,
           physics: BouncingScrollPhysics(),
           child: Column(
             children: [
