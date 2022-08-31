@@ -40,7 +40,7 @@ class BulletPoints extends StatelessWidget {
           child: const Padding(
             padding: EdgeInsets.all(78.0),
             child: Text(
-              "• Make up to 8% on your savings account. \n• Boost your credit score by 100 points within a year.",
+              "• Make up to 9.5% on your savings account. \n• Boost your credit score by 100 points within a year.",
               style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
             ),
           ),
@@ -57,7 +57,7 @@ class BulletPoints extends StatelessWidget {
           child: const Padding(
             padding: EdgeInsets.only(top: 430, left: 100),
             child: Text(
-              "• Make target-oriented investments with our 12% FD. \n• Interact with the app in your vernacular language.",
+              "• Make target-oriented investments with our 11% FD. \n• Interact with the app in your vernacular language.",
               style: TextStyle(
                 fontSize: 40,
                 fontWeight: FontWeight.bold,
