@@ -52,6 +52,18 @@ class Mentors extends StatelessWidget {
                     "_blanck");
               },
             ),
+            const SizedBox(
+              width: 50,
+            ),
+            Cards(
+              image: "assets/images/Arun Ramamurthy.png",
+              name: 'Arun Ramamurthy',
+              press: () {
+                html.window.open(
+                    "https://www.linkedin.com/in/arunramamurthy1975/",
+                    "_blanck");
+              },
+            ),
           ],
         ),
       ],
